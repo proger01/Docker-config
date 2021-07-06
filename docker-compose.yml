@@ -22,6 +22,7 @@ services:
       - MONGO_INITDB_ROOT_USERNAME=vadim
       - MONGO_INITDB_ROOT_PASSWORD=mypass
     volumes:
+#      - mongo-db:/data/db
       - ./mongo-db:/data/db
 
   redis:
